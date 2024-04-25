@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".AboutFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/heading1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="@string/filling_the_numbers"
+            android:textColor="@color/buttonColor"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20sp"
+            android:text="@string/instructions_1"
+            android:textColor="@color/colorPrimary"
+            android:textSize="25sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintTop_toBottomOf="@id/heading1" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/heading2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="@string/playing_the_game"
+            android:textColor="@color/buttonColor"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/text1" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20sp"
+            android:text="@string/instructions_2"
+            android:textColor="@color/colorPrimary"
+            android:textSize="25sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintTop_toBottomOf="@id/heading2" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/heading3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="@string/solving_a_sudoku"
+            android:textColor="@color/buttonColor"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/text2" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20sp"
+            android:text="@string/instructions_3"
+            android:textColor="@color/colorPrimary"
+            android:textSize="25sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintTop_toBottomOf="@id/heading3" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>
