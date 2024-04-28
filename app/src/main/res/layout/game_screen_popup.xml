@@ -45,7 +45,7 @@
         app:srcCompat="@drawable/exit_bbtn" />
 
     <ImageView
-        android:id="@+id/imageView10"
+        android:id="@+id/play_sound_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"

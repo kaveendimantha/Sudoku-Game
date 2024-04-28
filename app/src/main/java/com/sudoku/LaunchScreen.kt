@@ -80,14 +80,12 @@ class LaunchScreen : Fragment() {
         updateMuteSwitch(sound_switch)
         sound_switch.setOnCheckedChangeListener { buttonView, isChecked ->
             if(isChecked){
-                mediaPlayer.setVolume(0f, 0f)
                 isMuted = true
             }else{
-                mediaPlayer.setVolume(1f, 1f)
                 isMuted = false
             }
+            toggleMuteState()
             updateMuteSwitch(sound_switch)
-            saveIsMutedToPrefs(isMuted)
 
         }
         val music_switch : Switch = dialog.findViewById(R.id.sound_swich)
@@ -105,6 +103,17 @@ class LaunchScreen : Fragment() {
         dialog.show()
 
     }
+
+    private fun toggleMuteState() {
+        if (isMuted) {
+            mediaPlayer.setVolume(0.7f, 0.7f)
+        } else {
+            mediaPlayer.setVolume(0f, 0f)
+        }
+        isMuted = !isMuted
+        saveIsMutedToPrefs(isMuted)
+    }
+
     private fun saveIsSoundOffToPrefs(isSOff: Boolean) {
         sharedPreferences.edit().putBoolean("isSoundOff", isSOff).apply()
     }
@@ -115,11 +124,12 @@ class LaunchScreen : Fragment() {
 
     private fun updateMuteSwitch(music_switch : Switch) {
         if(isMuted){
-            music_switch.isChecked = true
-        }else{
             music_switch.isChecked = false
+        }else{
+            music_switch.isChecked = true
         }
     }
+
     private fun updateSoundOffSwitch(sound_switch : Switch) {
         if(isSoundOff){
             sound_switch.isChecked = false
