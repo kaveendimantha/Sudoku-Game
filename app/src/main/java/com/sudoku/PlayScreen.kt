@@ -1,6 +1,7 @@
 package com.sudoku
 
 import android.annotation.SuppressLint
+import android.app.Dialog
 import android.graphics.Color
 import android.graphics.Typeface.BOLD
 import android.os.Bundle
@@ -10,6 +11,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.ImageView
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import kotlinx.android.synthetic.main.fragment_play_screen.*
@@ -508,7 +510,18 @@ class PlayScreen : Fragment(), View.OnClickListener {
         val reset: Button = view.findViewById(R.id.resetButton)
         reset.setOnClickListener(this)
 
+        val sBtn : ImageView = view.findViewById(R.id.menu_btn)
+        sBtn.setOnClickListener {
+            showConformation()
+        }
+
         return view
+    }
+
+    private fun showConformation() {
+        val dialog = Dialog(requireContext(), R.style.CustomDialogTheme) // Assuming you are inside a Fragment
+        dialog.setContentView(R.layout.game_screen_popup)
+        dialog.show()
     }
 
     override fun onDestroy() {

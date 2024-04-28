@@ -14,11 +14,13 @@
         android:padding="10dp"
         android:text="@string/sudoku_solver"
         android:textColor="@color/colorPrimary"
-        android:textSize="40sp"
+        android:textSize="34sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.024" />
 
     <RelativeLayout
         android:id="@+id/sudokuMatrix"
@@ -884,39 +886,41 @@
 
     <Button
         android:id="@+id/solveButton"
-        android:layout_width="wrap_content"
+        android:layout_width="139dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="6dp"
-        android:background="@drawable/round_white_buttons"
+        android:background="@drawable/btn__bg"
         android:paddingHorizontal="20dp"
         android:paddingVertical="15dp"
         android:text="@string/solve"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="25sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/resetButton"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/sudokuMatrix"
-        tools:layout_editor_absoluteY="458dp" />
+        app:layout_constraintVertical_bias="0.177" />
 
     <Button
         android:id="@+id/resetButton"
         android:layout_width="139dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="6dp"
-        android:background="@drawable/round_white_buttons"
+        android:background="@drawable/btn__bg"
         android:paddingHorizontal="20dp"
         android:paddingVertical="15dp"
         android:text="@string/reset"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="25sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/solveButton"
         app:layout_constraintTop_toBottomOf="@id/sudokuMatrix"
-        tools:layout_editor_absoluteY="458dp" />
+        app:layout_constraintVertical_bias="0.177" />
 
     <androidx.gridlayout.widget.GridLayout
         android:id="@+id/inputButtons"
@@ -938,7 +942,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="10dp"
-            android:background="@drawable/bg"
+            android:background="@drawable/btn_bg_2"
             android:text="@string/clear"
             android:textColor="@color/colorPrimaryDark"
             android:textStyle="bold" />
@@ -949,7 +953,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="10dp"
-            android:background="@drawable/bg"
+            android:background="@drawable/btn_bg_2"
             android:text="@string/one"
             android:textColor="@color/colorPrimaryDark"
             android:textStyle="bold" />
@@ -960,7 +964,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="10dp"
-            android:background="@drawable/bg"
+            android:background="@drawable/btn_bg_2"
             android:text="@string/two"
             android:textColor="@color/colorPrimaryDark"
             android:textStyle="bold" />
@@ -971,7 +975,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="10dp"
-            android:background="@drawable/bg"
+            android:background="@drawable/btn_bg_2"
             android:text="@string/three"
             android:textColor="@color/colorPrimaryDark"
             android:textStyle="bold" />
@@ -982,7 +986,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="10dp"
-            android:background="@drawable/bg"
+            android:background="@drawable/btn_bg_2"
             android:text="@string/four"
             android:textColor="@color/colorPrimaryDark"
             android:textStyle="bold" />
@@ -993,7 +997,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="10dp"
-            android:background="@drawable/bg"
+            android:background="@drawable/btn_bg_2"
             android:text="@string/five"
             android:textColor="@color/colorPrimaryDark"
             android:textStyle="bold" />
@@ -1004,7 +1008,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="10dp"
-            android:background="@drawable/bg"
+            android:background="@drawable/btn_bg_2"
             android:text="@string/six"
             android:textColor="@color/colorPrimaryDark"
             android:textStyle="bold" />
@@ -1015,7 +1019,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="10dp"
-            android:background="@drawable/bg"
+            android:background="@drawable/btn_bg_2"
             android:text="@string/seven"
             android:textColor="@color/colorPrimaryDark"
             android:textStyle="bold" />
@@ -1026,7 +1030,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="10dp"
-            android:background="@drawable/bg"
+            android:background="@drawable/btn_bg_2"
             android:text="@string/eight"
             android:textColor="@color/colorPrimaryDark"
             android:textStyle="bold" />
@@ -1037,7 +1041,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="10dp"
-            android:background="@drawable/bg"
+            android:background="@drawable/btn_bg_2"
             android:text="@string/nine"
             android:textColor="@color/colorPrimaryDark"
             android:textStyle="bold" />

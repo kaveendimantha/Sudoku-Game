@@ -32,4 +32,7 @@
     <string name="hard">HARD</string>
     <string name="easy">EASY</string>
     <string name="Select_Difficulty">Select Difficulty</string>
+    <string name="settings">SETTINGS</string>
+    <string name="Music">MUSIC</string>
+    <string name="Sound">SOUND</string>
 </resources>
