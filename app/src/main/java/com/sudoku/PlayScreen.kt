@@ -92,6 +92,7 @@ class PlayScreen : Fragment(), View.OnClickListener {
                 }
                 setBoard()
             }
+
         }
         (timerVal as CountDownTimer).start()
 
@@ -537,11 +538,8 @@ class PlayScreen : Fragment(), View.OnClickListener {
         sBtn.setOnClickListener {
             showConformation()
         }
-
         return view
     }
-
-
     private fun toggleMuteState() {
         if (isMuted) {
             mediaPlayer.setVolume(0.7f, 0.7f)

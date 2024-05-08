@@ -9,7 +9,7 @@
     android:padding="16dp">
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/play_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -21,7 +21,7 @@
         app:srcCompat="@drawable/btn_bg_btn" />
 
     <ImageView
-        android:id="@+id/imageView8"
+        android:id="@+id/pause_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -33,7 +33,7 @@
         app:srcCompat="@drawable/pause_btn" />
 
     <ImageView
-        android:id="@+id/imageView9"
+        android:id="@+id/exit_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
